@@ -1,0 +1,89 @@
+
+
+
+
+.footer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: black;
+    height: 100vh;
+}
+.navigationbar
+{
+    display: flex;
+    justify-content: center;
+    background-color:grey;
+    width: 100vw;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: hotpink; */
+}
+li{
+    display: flex;
+    list-style: none;
+    height: auto;
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    color: white;
+}
+
+ul i{
+    margin-left: 1rem;
+    border-radius: 50%;
+    padding: .5rem .5rem;
+    transition: all .5s;
+    color: white;
+}
+
+.fa-facebook:hover{
+    background-color: royalblue;
+}
+.fa-twitter:hover{
+    background-color: skyblue;
+}
+.fa-linkedin:hover{
+    background-color: royalblue;
+}
+.fa-youtube:hover{
+    background-color: rgb(185, 26, 26);
+}
+
+.container1{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding: 1rem 1rem;;
+
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    color:white;
+    padding: 1rem 1rem;
+    font-size: 2rem;
+
+
+}
+.fcontent{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 5rem;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    color:grey;
+    padding: 1rem 1rem;
+}

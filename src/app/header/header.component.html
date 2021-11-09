@@ -1,0 +1,19 @@
+<header>
+  <h1><a routerLink="home"> Health Insuarnce Company</a></h1>
+  <!-- <div class="button" routerLink="login">
+        <i class="fa fa-user"></i>
+    </div> -->
+  <div *ngIf="afAuth.user | async">
+    <div class="button logout" (click)="logout()">
+      <a style="font-size: 25px;">Logout</a>
+    </div>
+  </div>
+
+  <div *ngIf="!(afAuth.user | async)">
+    <div class="button">
+      <a routerLink="login"><i class="fa fa-user"> Login/Signup</i></a>
+    </div>
+  </div>
+
+</header>
+<router-outlet></router-outlet>

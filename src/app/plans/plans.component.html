@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="left"></div>
+    <div class="right">
+        <div class="wrapper">
+            <div class="plan-container" *ngFor="let plan of plans">
+                <div class="card">
+                    <div class="row1">
+                        <img src={{plan.image}} alt="Apple-insurance-images" style="width: 15%">
+                        <h2>{{plan.planTittle}}</h2>
+                    </div>
+                    <div class="row2">
+                        <div class="column">
+                            <div class="label_">Cashless Hospital</div>
+                            <div class="hosital text"><span>{{plan.cashlessHospital}}</span></div>
+                        </div>
+                        <div class="column">
+                            <div class="label_">Cover</div>
+                            <div class="text">₹<span>{{plan.cover}}</span>L</div>
+                        </div>
+                        <div class="column">
+                            <div class="label_">Premium</div>
+                            <div class="text">₹<span>{{plan.premium}}</span>/month</div>
+                        </div>
+                        <div class="button">
+                            <a href="">Veiw Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

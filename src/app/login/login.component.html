@@ -1,0 +1,23 @@
+<div class="form_container">
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <div class="container">
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" formControlName="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" formControlName="password" required>
+
+      <div *ngIf="firebaseErrorMessage != ''" class="error-style">
+        <span>{{ firebaseErrorMessage }}</span>
+
+      </div>
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <a routerLink="" class="cancelbtn">Cancel</a>
+      <span class="psw"><a routerLink='signup'>create account</a><br></span>
+      <span class="psw">Forgot <a href="#">password? </a></span>
+    </div>
+  </form>
+</div>

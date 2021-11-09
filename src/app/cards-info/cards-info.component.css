@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+}
+
+.cards {
+    margin: 15px 10px 10px 10px;
+    /* position: relative; */
+    width: 21%;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    min-height: 200px;
+    transition: all .1s ease-in-out;
+    border-radius: 5px;
+}
+#c1{
+    background: linear-gradient(to right, #1d976c, #93f9b9);
+}
+#c2{
+    background: linear-gradient(to right, #cac531, #f3f9a7);
+}
+#c3{
+    background: linear-gradient(to right, #f12711, #f5af19); 
+}
+#c4{
+    background: linear-gradient(to right, #654ea3, #eaafc8);
+}
+#c5{
+    background: linear-gradient(to right, #a8c0ff, #3f2b96);
+}
+
+.cards:hover {
+    position: relative;
+    z-index: 1;
+    /* box-shadow: 0 0 40px 0 rgb(0 0 0 / 20%); */
+    box-shadow: 0 10px  10px 10px grey;
+    border: 0;
+    transform: scale(1.1);
+}
+
+.para {
+    
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    width: 60%;
+    margin: 17px 65px 30px 61px;
+}

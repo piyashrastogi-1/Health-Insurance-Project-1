@@ -1,0 +1,49 @@
+<div class="form_container">
+    <div class="left_container">
+        <div class="imges-background">
+            <img src="../../assets/images/health-insurance-policy-myths.jpg" alt="">
+        </div>
+    </div>
+    <div class="Right_container">
+        <div class="container" *ngIf="steps==1">
+            <h4>Protect yourself from Corona virus</h4>
+            <h1>All health plans cover Covid-19 treatment</h1>
+            <form [formGroup]="myForm">
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="male" checked> 
+                    <label for="male" class="male">
+                        <p>
+                            <span>
+                                <i class="fa fa-male"></i> <br>
+                                <span>Male</span>
+                            </span>
+                        </p>
+                    </label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">
+                        <p>
+                            <span>
+                                <i class="fa fa-female"></i> <br>
+                                <span>Female</span>
+                            </span>
+                        </p>
+                    </label>
+                </div>
+
+                <div class="user-details">
+                    <input type="text" id="fname" placeholder="Enter Full Name " required>
+                    <input type="text" id="phoneNumber" placeholder="Enter 10 Digit Mobile Number" required>
+                </div>
+                <div class="continue-btn" routerLink="plans">
+                    <input type="submit" value="Continue" >
+                </div>
+            </form>
+            <div class="terms-text">
+                By clicking on “CONTINUE”, you agree to our <span> <a href="">Privacy Policy</a></span>,
+                <span> <a href="">Term of Use</a></span> & <span> <a href="">Disclaimer</a></span>
+            </div>
+        </div>
+        
+
+    </div>
+</div>
