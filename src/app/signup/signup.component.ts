@@ -28,7 +28,6 @@ export class SignupComponent implements OnInit {
     }
 
     signup() {
-        console.log('i m in')
         // if (this.signupForm.invalid)                            // if there's an error in the form, don't submit it
         //     return;
 

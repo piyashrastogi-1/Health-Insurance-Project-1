@@ -6,10 +6,10 @@
           <hr>
       
           <label for="email"><b>Email</b></label>
-          <input autocomplete="off" type="text" placeholder="Enter Email" name="email" formControlName="email">
+          <input autocomplete="off" type="text" placeholder="Enter Email" name="email" formControlName="email" required>
       
           <label for="psw"><b>Password</b></label>
-          <input autocomplete="off" type="password" placeholder="Enter Password" name="psw" formControlName="password">
+          <input autocomplete="off" type="password" placeholder="Enter Password" name="psw" formControlName="password" required>
       
           <div *ngIf="firebaseErrorMessage != ''" class="error-style">
             <span>{{ firebaseErrorMessage }}</span>

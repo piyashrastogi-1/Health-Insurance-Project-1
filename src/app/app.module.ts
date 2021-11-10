@@ -30,7 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MainComponent,
     PlansComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

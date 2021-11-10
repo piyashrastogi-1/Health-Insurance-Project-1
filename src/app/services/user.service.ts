@@ -38,7 +38,6 @@ export class UserService {
     }
 
     signupUser(user: any): Promise<any> {
-        console.log('ha');
         return this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
             .then((result) => {
                 let emailLower = user.email.toLowerCase();

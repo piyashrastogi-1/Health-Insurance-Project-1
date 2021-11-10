@@ -4,4 +4,5 @@ export interface Plan{
     cashlessHospital:number;
     cover:number;
     premium:number;
+    veiwdetails:string;
 }

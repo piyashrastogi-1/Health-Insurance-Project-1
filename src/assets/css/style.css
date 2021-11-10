@@ -28,7 +28,19 @@ header .button{
 }
 header .button a{
     color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background-color:rgb(106, 197, 106);
+    padding: 12px 20px;
+    border-radius: 10px;
 
+}
+header .logout a{
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 800;
 }
 .button i {
     font-size: 18px;
