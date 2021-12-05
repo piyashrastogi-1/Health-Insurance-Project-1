@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "HIC-clone"
+    }
+  },
+  "defaultProject": "HIC-clone",
+  "cli": {
+    "analytics": "713df705-fe27-4f7f-95c4-e02f5f8564df"
+  }
 }

@@ -10,8 +10,9 @@
     flex-direction: column;
 
     background-color: black;
-    height: 100vh;
+    height: auto;
     width: 100%;
+    /* position: fixed; */
 }
 .navigationbar
 {
