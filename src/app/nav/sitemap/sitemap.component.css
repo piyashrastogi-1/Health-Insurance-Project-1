@@ -1,0 +1,42 @@
+
+.containers{
+    display: flex;
+    /* border: 2px solid black; */
+    padding: 15px;
+    margin: 15px;
+    margin-top: 50px        ;
+   
+    /* max-width: 2000px; */
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px #aaaaaa;
+ }
+
+     p{
+         font-size: 25px;
+         color :#34369e;
+     }
+
+.Investment{
+    
+    padding: 30px;
+}
+.Insurance{
+    padding: 30px;
+}
+
+
+.sitemap{
+    padding: 30px;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+h6{
+    color: #0e5373;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin: 10px;
+    
+}

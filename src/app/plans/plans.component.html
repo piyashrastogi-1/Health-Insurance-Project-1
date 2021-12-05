@@ -2,7 +2,7 @@
     <div class="left"></div>
     <div class="right">
         <div class="wrapper">
-            <div class="plan-container" *ngFor="let plan of plans">
+            <div class="plan-container" *ngFor="let plan of plans |async">
                 <div class="card">
                     <div class="row1">
                         <img src={{plan.image}} alt="Apple-insurance-images" style="width: 15%">

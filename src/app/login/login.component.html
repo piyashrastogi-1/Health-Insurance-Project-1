@@ -1,5 +1,6 @@
 <div class="form_container">
   <form [formGroup]="loginForm" (ngSubmit)="loginUser()">
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; padding:50px  0px ;" >Login</h1>
     <div class="container">
       <label for="email"><b>Email</b></label>
       <input type="text" placeholder="Enter Email" name="email" formControlName="email" required>
@@ -14,7 +15,7 @@
       <button type="submit">Login</button>
     </div>
 
-    <div class="container" style="background-color:#f1f1f1">
+    <div class="container1" style="background-color:#f1f1f1">
       <a routerLink="" class="cancelbtn">Cancel</a>
       <span class="psw"><a routerLink='signup'>create account</a><br></span>
       <span class="psw">Forgot <a href="#">password? </a></span>

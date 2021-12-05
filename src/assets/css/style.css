@@ -5,35 +5,42 @@
 }
 body{
     width: 100%;
+    /* overflow-x: hidden; */
 }
 header{
     padding: 10px;
     position: fixed;
     width: 100%;
     height: 70px;
-    background-color:blue;    
+    background-color:#fff;    
     display: flex;
     justify-content: space-between; 
     z-index: 100;
+    box-shadow: 0 8px 6px -6px black;
 }
 header h1 a{
     text-decoration: none;
-    color: #fff;
+    color:blue;
+    margin-left: 90px;
+    font-size:35px;
+
 }
 header .button{
     
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 40px;
+    transition: .3s;
 
 }
 header .button a{
-    color: #fff;
-    font-size: 18px;
+    color: blue;
+    font-size: 28px;
     font-weight: 500;
     cursor: pointer;
-    background-color:rgb(106, 197, 106);
+    /* background-color:rgb(106, 197, 106); */
     padding: 12px 20px;
     border-radius: 10px;
+    text-decoration: none;
 
 }
 header .logout a{
@@ -43,8 +50,11 @@ header .logout a{
     font-weight: 800;
 }
 .button i {
-    font-size: 18px;
+    font-size: 28px;
     
+}
+.loggedIn{
+    display: inline-flex;
 }
 
 

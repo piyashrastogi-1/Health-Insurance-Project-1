@@ -2,7 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Plan } from '../services/plan';
 import { PlanListService } from '../services/plan-list.service';
 import { AngularFireAuth } from '@angular/fire/auth';
-import * as firebase from 'firebase';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreCollection, AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { Observable } from 'rxjs';
 
 
 
@@ -12,22 +15,21 @@ import * as firebase from 'firebase';
   styleUrls: ['./plans.component.css']
 })
 export class PlansComponent implements OnInit {
-  plans:Plan[]=[];
+  plans:Observable<Plan[]>;
 
 
   constructor(private PlanService:PlanListService,public afAuth: AngularFireAuth) { }
   
 
   ngOnInit(): void {
-    this.getPlans();
+    this.plans=this.PlanService.getPlans();
+    this.plans.subscribe(val=>console.log(val))
   }
   getPlans(){
-    this.plans=this.PlanService.getPlans();
+    
   }
   onselect(){
    if(this.afAuth.auth.currentUser){
-     
-     
    }
    else{
      alert('Kindly login first')

@@ -5,6 +5,20 @@ import { MainComponent } from './main/main.component';
 import { PlansComponent } from './plans/plans.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ArticleComponent } from './nav/article/article.component';
+import { CareersComponent } from './nav/careers/careers.component';
+import { ContactusComponent } from './nav/contactus/contactus.component';
+import { InsuaranceCompaniesComponent } from './nav/insuarance-companies/insuarance-companies.component';
+import { KnowYourAdvisorComponent } from './nav/know-your-advisor/know-your-advisor.component';
+import { LegalComponent } from './nav/legal/legal.component';
+import { NewsroomComponent } from './nav/newsroom/newsroom.component';
+import { SitemapComponent } from './nav/sitemap/sitemap.component';
+import { ChildHealthInsuranceComponent } from './child-health-insurance/child-health-insurance.component';
+import { CoronavirusHealthIsuranceComponent } from './coronavirus-health-isurance/coronavirus-health-isurance.component';
+import { FamilyHealthInsuranceComponent } from './family-health-insurance/family-health-insurance.component';
+import { HealthInsuranceClaimComponent } from './health-insurance-claim/health-insurance-claim.component';
+import { SeniorCitizenHealthInsuranceComponent } from './senior-citizen-health-insurance/senior-citizen-health-insurance.component';
 
 
 
@@ -15,8 +29,37 @@ const routes: Routes = [
   },
   
   {
+    path:'home/child-health',
+    component:ChildHealthInsuranceComponent
+  },
+  {
+    path:'home/coronavirusHealth',
+    component:CoronavirusHealthIsuranceComponent
+  },
+  {
+    path:'home/family-health',
+    component:FamilyHealthInsuranceComponent
+  },
+  {
+    path:'home/health-insurance',
+    component:HealthInsuranceClaimComponent
+  },
+  {
+    path: 'home/senior-insurance',
+   component: SeniorCitizenHealthInsuranceComponent
+  },
+  {
+    path: 'signup',
+   component: SignupComponent
+  },
+  {
     path: 'login/signup',
    component: SignupComponent
+  },
+
+  {
+    path:'contactus/login',
+    component:LoginComponent
   },
   {
     path: 'home/plans-form',
@@ -36,11 +79,48 @@ const routes: Routes = [
     redirectTo:'home',
     pathMatch:'full'
   },
+  // {
+  //   path:'**',
+  //   redirectTo:'home',
+  //   pathMatch:'full'
+  // },
   {
-    path:'**',
-    redirectTo:'home',
-    pathMatch:'full'
+    path:'about',
+    component:AboutUsComponent
+  },
+  {
+    path:'article',
+    component:ArticleComponent
+  },
+  {
+    path:'careers',
+    component:CareersComponent
+  },
+  {
+    path:'contactus',
+    component:ContactusComponent
+  },
+  {
+    path:'insurance-companies',
+    component:InsuaranceCompaniesComponent
+  },
+  {
+    path:'know-your-advisor',
+    component:KnowYourAdvisorComponent
+  },
+  {
+    path:'legal',
+    component:LegalComponent
+  },
+  {
+    path:'newsroom',
+    component:NewsroomComponent
+  },
+  {
+    path:'sitmap',
+    component:SitemapComponent
   }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

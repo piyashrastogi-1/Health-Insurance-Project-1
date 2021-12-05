@@ -19,6 +19,20 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { SitemapComponent } from './nav/sitemap/sitemap.component';
+import { CareersComponent } from './nav/careers/careers.component';
+import { LegalComponent } from './nav/legal/legal.component';
+import { InsuaranceCompaniesComponent } from './nav/insuarance-companies/insuarance-companies.component';
+import { ArticleComponent } from './nav/article/article.component';
+import { ContactusComponent } from './nav/contactus/contactus.component';
+import { KnowYourAdvisorComponent } from './nav/know-your-advisor/know-your-advisor.component';
+import { NewsroomComponent } from './nav/newsroom/newsroom.component';
+import { FamilyHealthInsuranceComponent } from './family-health-insurance/family-health-insurance.component';
+import { CoronavirusHealthIsuranceComponent } from './coronavirus-health-isurance/coronavirus-health-isurance.component';
+import { HealthInsuranceClaimComponent } from './health-insurance-claim/health-insurance-claim.component';
+import { ChildHealthInsuranceComponent } from './child-health-insurance/child-health-insurance.component';
+import { SeniorCitizenHealthInsuranceComponent } from './senior-citizen-health-insurance/senior-citizen-health-insurance.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +45,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     PlansComponent,
     SignupComponent,
     LoginComponent,
+    AboutUsComponent,
+    SitemapComponent,
+    CareersComponent,
+    LegalComponent,
+    InsuaranceCompaniesComponent,
+    ArticleComponent,
+    ContactusComponent,
+    KnowYourAdvisorComponent,
+    NewsroomComponent,
+    FamilyHealthInsuranceComponent,
+    CoronavirusHealthIsuranceComponent,
+    HealthInsuranceClaimComponent,
+    ChildHealthInsuranceComponent,
+    SeniorCitizenHealthInsuranceComponent,
   ],
   imports: [
     BrowserModule,

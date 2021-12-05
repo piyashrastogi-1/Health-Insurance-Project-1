@@ -1,0 +1,38 @@
+.career{
+    text-align: center;
+    /* display: inline-flex; */
+    width:100%;
+}
+img{
+  border: 2px solid black;
+ /* margin: 5PX; */
+ width: 1685px;
+ height: 500px;
+  
+
+}
+h1{
+  text-align: center;
+  color: #065d5d;
+  background-color: #d2dada;
+
+
+}
+.cTop{
+  display: inline-flex;
+  width: 100%;
+  
+}
+.Center{
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+ 
+}
+li{
+  padding: 20px;
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 2px 3px 3px 3px white;
+ 
+}

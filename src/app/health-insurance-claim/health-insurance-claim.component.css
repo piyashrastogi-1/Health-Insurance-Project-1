@@ -1,0 +1,132 @@
+.divmain{
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+}
+.cont{
+    text-align: center;
+    justify-content: center;
+}
+.divCenter{
+    /* border:2px solid black; */
+    padding: 10px;
+    margin: 10px;
+}
+.formDiv{
+    padding: 10px;
+    margin: 10px;
+    width: 1220px;
+}
+.formFeild {
+    margin-left: 177px;
+    margin-right: 177px;
+}
+.form-field{
+    display: inline-flex;
+    
+    margin: 10px;
+    
+}
+input , .textarea{
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    height: 29px;
+    border:white;
+    width: 263px;
+    }
+.callToaction{
+    width: 215px;
+    height: 38px;
+    border: 2px solid red;
+    border-radius: 9px;
+    color: white;
+    background-color: red;
+    text-align: center;
+}
+#btnCallToAction{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+.para{
+    text-align: center;
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.abouttext{
+    font-size: 20px;
+}
+.aboutContent ,.claim_fourth{
+    background-color: white;
+}
+.claim_third{
+    background-color:rgb(181, 243, 245);
+}
+.howtoGet h4{
+font-size: 20px;
+}
+.bottom{
+    background-color: rgb(240, 106, 83);
+    margin: 115px;
+    padding: 17px;
+}
+.claim_fifth{
+    background-color: rgb(240, 180, 102);
+    height: 600px;
+}
+.diffDiv{
+    display: inline-flex;
+}
+.wid-50{
+    border: 2px solid white;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    top: 50px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 2px 2px 2px 2px #aaaaaa;
+}
+.title{
+    width: 660px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(243, 189, 124);
+    margin-left: 25%;
+}
+.bottom1{
+    background-color: white;
+    
+    padding: 17px;
+}
+.main{
+    padding: 111px;
+    height: 190px;
+}
+.claimSumission{
+    width: 98%;
+    margin-left: 10px;
+}
+
+.insured{
+    display: inline-flex;
+    width: 260px;
+    height: 200px;
+    margin-right: 20px;
+    margin-left: 30px;
+    padding: 10px;
+}
+.fileCarInsurance {
+    border: 2px solid rgb(0, 102, 185) ;
+}
+.text-center1{
+    font-size:21px ;
+}

@@ -11,13 +11,14 @@
 
     background-color: black;
     height: 100vh;
+    width: 100%;
 }
 .navigationbar
 {
     display: flex;
     justify-content: center;
     background-color:grey;
-    width: 100vw;
+    width: 100%;
 }
 ul{
     display: flex;

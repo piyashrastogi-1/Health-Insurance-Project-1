@@ -9,9 +9,12 @@
     </div>
   </div>
 
-  <div *ngIf="!(afAuth.user | async)">
+  <div class="loggedIn" *ngIf="!(afAuth.user | async)">
     <div class="button">
-      <a routerLink="login"><i class="fa fa-user"> Login/Signup</i></a>
+      <a routerLink="login">Login <i class="fa fa-sign-in"></i></a>
+    </div>
+    <div class="button">
+      <a routerLink="signup">Signup <i class="fa fa-sign-in"></i></a>
     </div>
   </div>
 
