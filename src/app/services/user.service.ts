@@ -61,4 +61,16 @@ export class UserService {
                     return { isValid: false, message: error.message };
             });
     }
+    getUser():Observable<User[]>{  
+        // this.plans=this.PlanService.getPlans();
+        return this.db.collection<any>('users')
+        .snapshotChanges().pipe(map(snaps =>{
+          return  snaps.map(snap => {
+            return <User>{
+              id:snap.payload.doc.id,
+              ...snap.payload.doc.data()
+            };
+          });
+        }));
+      }
 }
