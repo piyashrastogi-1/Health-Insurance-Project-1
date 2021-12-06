@@ -1,11 +1,23 @@
 <header>
-  <h1><a routerLink="home"> Health Insuarnce Company</a></h1>
+  <h1><a routerLink="home"> Health Insuarance Company</a></h1>
   <!-- <div class="button" routerLink="login">
         <i class="fa fa-user"></i>
     </div> -->
   <div *ngIf="afAuth.user | async">
-    <div class="button logout" (click)="logout()">
+    <!-- <div class="button logout" (click)="logout()">
       <a >Logout</a>
+      <div class="button">
+        <a href="#">MyProfile</a>
+        <a href="">Logout</a>
+      </div>
+      
+    </div> -->
+    <div class="button">
+      <button class="btn"><i class="fa fa-user"></i></button>
+      <div class="drp-dwn">
+        <a href="">Profile</a>
+        <a href="" (click)="logout()">Logout</a>
+      </div>
     </div>
   </div>
 
@@ -13,9 +25,9 @@
     <div class="button">
       <a routerLink="login">Login <i class="fa fa-sign-in"></i></a>
     </div>
-    <div class="button">
+    <!-- <div class="button">
       <a routerLink="signup">Signup <i class="fa fa-sign-in"></i></a>
-    </div>
+    </div> -->
   </div>
 
 </header>

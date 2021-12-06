@@ -33,6 +33,8 @@ import { CoronavirusHealthIsuranceComponent } from './coronavirus-health-isuranc
 import { HealthInsuranceClaimComponent } from './health-insurance-claim/health-insurance-claim.component';
 import { ChildHealthInsuranceComponent } from './child-health-insurance/child-health-insurance.component';
 import { SeniorCitizenHealthInsuranceComponent } from './senior-citizen-health-insurance/senior-citizen-health-insurance.component';
+import { ArogyaSanjeevaniPolicyComponent } from './arogya-sanjeevani-policy/arogya-sanjeevani-policy.component';
+import { CriticalIllnessPolicyComponent } from './critical-illness-policy/critical-illness-policy.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +61,8 @@ import { SeniorCitizenHealthInsuranceComponent } from './senior-citizen-health-i
     HealthInsuranceClaimComponent,
     ChildHealthInsuranceComponent,
     SeniorCitizenHealthInsuranceComponent,
+    ArogyaSanjeevaniPolicyComponent,
+    CriticalIllnessPolicyComponent,
   ],
   imports: [
     BrowserModule,

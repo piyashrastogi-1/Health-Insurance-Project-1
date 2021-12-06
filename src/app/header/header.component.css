@@ -1,0 +1,39 @@
+/* <div class="button">
+      <button clas><i class="fa fa-user"></i></button>
+      <div class="drp-dwn">
+        <a href="">Profile</a>
+        <a href="">Logout</a>
+      </div>
+    </div> */
+.button{
+    position: relative;
+    display: inline-block;
+    margin-right: 50px;
+}
+.btn{
+    /* background-color: blue; */
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+.drp-dwn{
+    display: none;
+    position: absolute;
+
+}
+.drp-dwn a{
+    color: black;
+    position: relative;
+    right: 30px;
+   
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    
+    
+}
+.button:hover .drp-dwn{
+    display: block;
+}
+
+
