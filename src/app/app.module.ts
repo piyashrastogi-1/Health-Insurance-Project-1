@@ -36,6 +36,9 @@ import { SeniorCitizenHealthInsuranceComponent } from './senior-citizen-health-i
 import { ArogyaSanjeevaniPolicyComponent } from './arogya-sanjeevani-policy/arogya-sanjeevani-policy.component';
 import { CriticalIllnessPolicyComponent } from './critical-illness-policy/critical-illness-policy.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CoronaPlansComponent } from './corona-plans/corona-plans.component';
+import { SeniorPlansComponent } from './senior-plans/senior-plans.component';
+import { FamilyPlansComponent } from './family-plans/family-plans.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +68,9 @@ import { ProfileComponent } from './profile/profile.component';
     ArogyaSanjeevaniPolicyComponent,
     CriticalIllnessPolicyComponent,
     ProfileComponent,
+    CoronaPlansComponent,
+    SeniorPlansComponent,
+    FamilyPlansComponent,
   ],
   imports: [
     BrowserModule,

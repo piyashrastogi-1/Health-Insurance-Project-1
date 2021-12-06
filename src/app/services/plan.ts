@@ -5,4 +5,5 @@ export interface Plan{
     cover:number;
     premium:number;
     veiwdetails:string;
+    category:string;
 }

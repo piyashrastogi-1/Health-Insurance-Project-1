@@ -5,7 +5,14 @@
     margin: 0 0 20px;
     letter-spacing: .024em;
     font-weight: 700;
-    padding-top: 10px;
+    padding-top: 70px;
+    color: rgb(4, 64, 119);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Insurance{
+    margin: 10px;
+    padding: 17px;
+    
 }
 .char-count{
     display: inline; 
@@ -58,4 +65,26 @@
 
  h2{
     text-align: center;
+}
+.conte{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 5px;
+}
+.heads{
+    color:rgb(25, 103, 177);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+
+}
+.hea{
+    color: rgb(100, 50, 99);
+    margin: 5px;
+    padding: auto;
+}
+.health-img{
+    width: 100%;
+    margin:  auto;
 }
