@@ -1,0 +1,65 @@
+.container{
+    padding-top: 70px;
+}
+h1{
+    text-align: center;
+    color: rgb(63, 11, 105);
+    font-size: 46px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif
+}
+h5{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(6 56 131 / 88%);
+}
+.cont{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main{
+    display: inline-flex;
+}
+.left{
+  
+    background-color: white;
+    margin: 50px;
+    padding: 35px;
+    width: 28%;
+    height: 30%;
+}
+.right{
+    background-color: white;
+    margin: 50px;
+    width: 28%;
+    height: 30%;
+    padding: 35px;
+    
+}
+.middle{
+    background-color: white;
+    margin: 50px;  
+    width: 28%;
+    height: 30%;
+    padding: 35px;
+  
+}
+img, svg {
+    vertical-align: middle;
+    height: 122px;
+    width: 55%;
+    margin: 46px;
+}
+h6{
+    color: rgb(78, 75, 236);
+    font-size: 20px;
+}
+h2{
+    color: rgb(44, 120, 235);
+}
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
