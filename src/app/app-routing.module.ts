@@ -19,6 +19,8 @@ import { CoronavirusHealthIsuranceComponent } from './coronavirus-health-isuranc
 import { FamilyHealthInsuranceComponent } from './family-health-insurance/family-health-insurance.component';
 import { HealthInsuranceClaimComponent } from './health-insurance-claim/health-insurance-claim.component';
 import { SeniorCitizenHealthInsuranceComponent } from './senior-citizen-health-insurance/senior-citizen-health-insurance.component';
+import { ArogyaSanjeevaniPolicyComponent } from './arogya-sanjeevani-policy/arogya-sanjeevani-policy.component';
+import { CriticalIllnessPolicyComponent } from './critical-illness-policy/critical-illness-policy.component';
 
 
 
@@ -27,26 +29,54 @@ const routes: Routes = [
     path:'login',
     component:LoginComponent
   },
+  {
+    path:'home/arogya-sanjeevani',
+    component:ArogyaSanjeevaniPolicyComponent
+  },
+  {
+    path:'home/critical',
+    component:CriticalIllnessPolicyComponent
+  },
   
   {
     path:'home/child-health',
     component:ChildHealthInsuranceComponent
   },
   {
+    path:'home/child-health/plans',
+    component:PlansComponent
+  },
+  {
     path:'home/coronavirusHealth',
     component:CoronavirusHealthIsuranceComponent
+  },
+  {
+    path:'home/coronavirusHealth/plans',
+    component:PlansComponent
   },
   {
     path:'home/family-health',
     component:FamilyHealthInsuranceComponent
   },
   {
+    path:'home/family-health/plans',
+    component:PlansComponent
+  },
+  {
     path:'home/health-insurance',
     component:HealthInsuranceClaimComponent
   },
   {
+    path:'home/health-insurance/plans',
+    component:PlansComponent
+  },
+  {
     path: 'home/senior-insurance',
    component: SeniorCitizenHealthInsuranceComponent
+  },
+  {
+    path: 'home/senior-insurance/plans',
+   component: PlansComponent
   },
   {
     path: 'signup',

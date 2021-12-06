@@ -2,16 +2,26 @@ import { Injectable } from '@angular/core';
 
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
+import { AngularFirestore ,AngularFirestoreCollection,AngularFirestoreDocument } from '@angular/fire/firestore';
+import {map} from 'rxjs/operators'
+import { Observable } from 'rxjs';
+import { User } from 'firebase';
+
+
 
 @Injectable({
     providedIn: 'root'
 })
 export class UserService {
+    private userCollection:AngularFirestoreCollection<User>;
+    private users:Observable<User[]>;
 
     userLoggedIn: boolean;      // other components can check on this variable for the login status of the user
 
-    constructor(private router: Router, private afAuth: AngularFireAuth) {
+    constructor(private router: Router, private afAuth: AngularFireAuth,public db: AngularFirestore) {
         this.userLoggedIn = false;
+        this.userCollection = db.collection<User> ('users');
+
 
         this.afAuth.auth.onAuthStateChanged((user) => {              // set up a subscription to always know the login status of the user
             if (user) {
@@ -41,7 +51,9 @@ export class UserService {
         return this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.password)
             .then((result) => {
                 let emailLower = user.email.toLowerCase();
-                result.user.sendEmailVerification();                    // immediately send the user a verification email
+                result.user.sendEmailVerification();
+                this.userCollection.doc(result.user.uid).set(user); 
+                                    // immediately send the user a verification email
             })
             .catch(error => {
                 console.log('Auth Service: signup error', error);
