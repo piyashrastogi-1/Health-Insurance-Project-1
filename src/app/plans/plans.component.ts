@@ -2,9 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Plan } from '../services/plan';
 import { PlanListService } from '../services/plan-list.service';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { AngularFireModule } from "@angular/fire";
-import { AngularFirestoreCollection, AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
 import { Observable } from 'rxjs';
 
 
@@ -22,7 +19,7 @@ export class PlansComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.plans=this.PlanService.getPlans();
+    this.plans=this.PlanService.getGeneralPlans();
     this.plans.subscribe(val=>console.log(val))
   }
   getPlans(){

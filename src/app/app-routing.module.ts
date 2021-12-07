@@ -22,6 +22,12 @@ import { SeniorCitizenHealthInsuranceComponent } from './senior-citizen-health-i
 import { ArogyaSanjeevaniPolicyComponent } from './arogya-sanjeevani-policy/arogya-sanjeevani-policy.component';
 import { CriticalIllnessPolicyComponent } from './critical-illness-policy/critical-illness-policy.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CoronaPlansComponent } from './corona-plans/corona-plans.component';
+import { FamilyPlansComponent } from './family-plans/family-plans.component';
+import { SeniorPlansComponent } from './senior-plans/senior-plans.component';
+import { CriticalPlansComponent } from './critical-plans/critical-plans.component';
+import { ArogyaPlansComponent } from './arogya-plans/arogya-plans.component';
+import { ChildPlansComponent } from './child-plans/child-plans.component';
 
 
 
@@ -155,6 +161,31 @@ const routes: Routes = [
   {
     path:'sitmap',
     component:SitemapComponent
+  },
+  {
+    path:'home/coronavirusHealth/corona-plans',
+    component:CoronaPlansComponent
+  },
+  {
+    path:'home/family-health/family-plans',
+    component:FamilyPlansComponent,
+
+  },
+  {
+    path:'home/senior-insurance/senior-plans',
+    component:SeniorPlansComponent
+  },
+  {
+    path:'home/critical/critical-plans',
+    component:CriticalPlansComponent
+  },
+  {
+    path:'home/arogya-sanjeevani/arogya-plans',
+    component:ArogyaPlansComponent
+  },
+  {
+    path:'home/child-health/child-plans',
+    component:ChildPlansComponent
   }
 
 ];

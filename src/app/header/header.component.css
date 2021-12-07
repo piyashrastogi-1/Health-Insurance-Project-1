@@ -9,6 +9,7 @@
     /* position: relative; */
     display: inline-block;
     /* margin-right: 80px; */
+    transition: .3s;
 }
 .btn{
     /* background-color: blue; */
@@ -28,7 +29,9 @@
 }
 .btn i{
     color: blue;
+    transition: .5s;
 }
+
 .drp-dwn a{
     color: #fff;
     position: relative;
