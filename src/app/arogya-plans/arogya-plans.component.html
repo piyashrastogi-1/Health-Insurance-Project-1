@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="left"></div>
+    <div class="right">
+        <div class="wrapper">
+            <div class="plan-container" *ngFor="let arogyaplan of arogyaplans |async">
+                <div class="card">
+                    <div class="row1">
+                        <img src={{arogyaplan.image}} alt="Apple-insurance-images" style="width: 15%">
+                        <h2>{{arogyaplan.planTittle}}</h2>
+                    </div>
+                    <div class="row2">
+                        <div class="column">
+                            <div class="label_">Cashless Hospital</div>
+                            <div class="hosital text"><span>{{arogyaplan.cashlessHospital}}</span></div>
+                        </div>
+                        <div class="column">
+                            <div class="label_">Cover</div>
+                            <div class="text">₹<span>{{arogyaplan.cover}}</span>L</div>
+                        </div>
+                        <div class="column">
+                            <div class="label_">Premium</div>
+                            <div class="text">₹<span>{{arogyaplan.premium}}</span>/month</div>
+                        </div>
+                        <div class="button">
+                            <a  (click)="onselect(plan)">Buy</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</div>

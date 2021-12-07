@@ -39,6 +39,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { CoronaPlansComponent } from './corona-plans/corona-plans.component';
 import { SeniorPlansComponent } from './senior-plans/senior-plans.component';
 import { FamilyPlansComponent } from './family-plans/family-plans.component';
+import { CriticalPlansComponent } from './critical-plans/critical-plans.component';
+import { ArogyaPlansComponent } from './arogya-plans/arogya-plans.component';
+import { ChildPlansComponent } from './child-plans/child-plans.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +74,9 @@ import { FamilyPlansComponent } from './family-plans/family-plans.component';
     CoronaPlansComponent,
     SeniorPlansComponent,
     FamilyPlansComponent,
+    CriticalPlansComponent,
+    ArogyaPlansComponent,
+    ChildPlansComponent,
   ],
   imports: [
     BrowserModule,

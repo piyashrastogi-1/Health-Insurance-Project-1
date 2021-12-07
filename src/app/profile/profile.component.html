@@ -8,6 +8,9 @@
         </div>
         <div class="left" *ngIf="(user | async)">
             <h1>Name: {{ (user | async)?.name }}</h1>
+            <h1>Date Of Birth: {{ (user | async)?.dob }}</h1>
+            <h1>Gender: {{ (user | async)?.gender }}</h1>
+            <h1>Phone Number: {{ (user | async)?.phone }}</h1>
             <h1>Email: {{ (user | async)?.email }}</h1>
         </div>
     </div>

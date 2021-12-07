@@ -25,6 +25,9 @@ import { ProfileComponent } from './profile/profile.component';
 import { CoronaPlansComponent } from './corona-plans/corona-plans.component';
 import { FamilyPlansComponent } from './family-plans/family-plans.component';
 import { SeniorPlansComponent } from './senior-plans/senior-plans.component';
+import { CriticalPlansComponent } from './critical-plans/critical-plans.component';
+import { ArogyaPlansComponent } from './arogya-plans/arogya-plans.component';
+import { ChildPlansComponent } from './child-plans/child-plans.component';
 
 
 
@@ -171,6 +174,18 @@ const routes: Routes = [
   {
     path:'home/senior-insurance/senior-plans',
     component:SeniorPlansComponent
+  },
+  {
+    path:'home/critical/critical-plans',
+    component:CriticalPlansComponent
+  },
+  {
+    path:'home/arogya-sanjeevani/arogya-plans',
+    component:ArogyaPlansComponent
+  },
+  {
+    path:'home/child-health/child-plans',
+    component:ChildPlansComponent
   }
 
 ];
